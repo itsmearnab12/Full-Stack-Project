@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+.right {
+    width: 75vw;
+    margin: 16px 0;
+}
+
+/* .home{
+    padding: 10px;
+} */
+.home ul li {
+    display: flex;
+    gap: 15px;
+    width: 15px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img {
+    width: 30px;
+}
+
+.library {
+    min-height: 75vh;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer a {
+    color: grey;
+}
+
+.nav {
+    display: flex;
+    width: 60px;
+    /* height: 60px; */
+    margin-right: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34)
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.SpotifyPlaylists {
+    padding: 16px;
+}
+.buttons button{
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+#Signup{
+    background: none;
+    color: white;
+    border: none;
+}
+#Signup:hover{
+    background: white;
+    color: black;
+}
+.cardContainer{
+    margin: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    margin-top: 10px;
+}
+.card > *{
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
