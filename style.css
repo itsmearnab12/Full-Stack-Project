@@ -59,6 +59,7 @@ body {
     gap: 13px;
     position: absolute;
     bottom: 0;
+    padding: 10px 0;
 }
 
 .footer a {
@@ -75,7 +76,8 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(34, 34, 34)
+    background-color: rgb(34, 34, 34);
+    height: 72px;
 }
 
 .header>* {
@@ -85,11 +87,11 @@ body {
 .SpotifyPlaylists {
     padding: 16px;
 }
-.buttons button{
+/* .buttons button{
     padding: 10px 25px;
     border-radius: 30px;
-}
-.buttons {
+} */
+/* .buttons {
     display: flex;
     gap: 20px;
 }
@@ -101,12 +103,14 @@ body {
 #Signup:hover{
     background: white;
     color: black;
-}
+} */
 .cardContainer{
     margin: 30px;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 66vh;
 }
 .card{
     width: 200px;
@@ -114,6 +118,7 @@ body {
     border-radius: 5px;
     background-color: #252525;
     margin-top: 10px;
+    position: relative;
 }
 .card > *{
     padding-top: 10px;
@@ -121,4 +126,46 @@ body {
 .card img{
     width: 100%;
     object-fit: contain;
+}
+.play{
+    width: 28px; 
+    height: 28px; 
+    background-color: #1fdf64; 
+    border-radius: 50%; 
+    padding: 4px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    position: absolute;
+    top: 168px;
+    right: 17px;
+}
+.buttons > *{
+    margin: 0 12px;
+}
+.signupbtn{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.signupbtn:hover{
+    font-size: 17px;
+    color: white;
+}
+.loginbtn{
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    width: 79px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+.loginbtn:hover{
+    font-weight: bold;
+    font-size: 17px;
 }
