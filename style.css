@@ -19,11 +19,9 @@ body {
 .right {
     width: 75vw;
     margin: 16px 0;
+    position: relative;
 }
 
-/* .home{
-    padding: 10px;
-} */
 .home ul li {
     display: flex;
     gap: 15px;
@@ -69,7 +67,6 @@ body {
 .nav {
     display: flex;
     width: 60px;
-    /* height: 60px; */
     margin-right: 50px;
 }
 
@@ -87,24 +84,8 @@ body {
 .SpotifyPlaylists {
     padding: 16px;
 }
-/* .buttons button{
-    padding: 10px 25px;
-    border-radius: 30px;
-} */
-/* .buttons {
-    display: flex;
-    gap: 20px;
-}
-#Signup{
-    background: none;
-    color: white;
-    border: none;
-}
-#Signup:hover{
-    background: white;
-    color: black;
-} */
-.cardContainer{
+
+.cardContainer {
     margin: 30px;
     display: flex;
     gap: 15px;
@@ -112,7 +93,8 @@ body {
     overflow-y: scroll;
     max-height: 66vh;
 }
-.card{
+
+.card {
     width: 200px;
     padding: 10px;
     border-radius: 5px;
@@ -120,30 +102,35 @@ body {
     margin-top: 10px;
     position: relative;
 }
-.card > *{
+
+.card>* {
     padding-top: 10px;
 }
-.card img{
+
+.card img {
     width: 100%;
     object-fit: contain;
 }
-.play{
-    width: 28px; 
-    height: 28px; 
-    background-color: #1fdf64; 
-    border-radius: 50%; 
-    padding: 4px; 
-    display: flex; 
-    align-items: center; 
+
+.play {
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     position: absolute;
     top: 168px;
     right: 17px;
 }
-.buttons > *{
+
+.buttons>* {
     margin: 0 12px;
 }
-.signupbtn{
+
+.signupbtn {
     background-color: rgb(34, 34, 34);
     color: white;
     font-weight: bold;
@@ -152,11 +139,13 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
-.signupbtn:hover{
+
+.signupbtn:hover {
     font-size: 17px;
     color: white;
 }
-.loginbtn{
+
+.loginbtn {
     background-color: white;
     border-radius: 21px;
     color: black;
@@ -165,7 +154,22 @@ body {
     padding: 10px;
     font-size: 16px;
 }
-.loginbtn:hover{
+
+.loginbtn:hover {
     font-weight: bold;
     font-size: 17px;
+}
+
+.playbar {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(139, 193, 139);
+    width: 100%;
+    padding: 12px;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 }
